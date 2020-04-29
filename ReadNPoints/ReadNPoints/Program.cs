@@ -44,6 +44,30 @@ namespace ReadNPoints
         }
 
         // Parse a string from console input and return character array of length 2
+        
+        /*  read line
+         *  to upper
+         *  if string.length == 2 ( enter AB )
+         *  to character array with length 2
+         *  
+         */ 
+        static char[] NewInputParse()
+        {
+            char[] inputNames = new char[2];
+
+            string input = Console.ReadLine().ToUpper();
+            bool inputValid = false;
+
+            while (!inputValid)
+            {
+                if (input.Length == 2)
+                {
+                    inputNames = input.ToArray();
+                }
+            }
+            return null;
+        }
+
         static char[] ReadTwoCharFromConsoleInput()
         {
 
@@ -54,7 +78,10 @@ namespace ReadNPoints
             {
                 try
                 {
-                    inputNames = Console.ReadLine().ToUpper().Split(' ').Select(char.Parse).ToArray();
+                    inputNames = Console.ReadLine().
+                        ToUpper().Split(' ').
+                        Select(char.Parse).
+                        ToArray();
                     inputValid = true;
                 }
                 catch (SystemException e)
@@ -164,7 +191,6 @@ namespace ReadNPoints
                         FancyErrorMessage(e);
                     }
                 }
-                // ur gay
                 // If the data is valid, store result of distance formula method and point names
                 double[] results = { GetDistance(left, right), inputNames[0], inputNames[1] };
                 return results;

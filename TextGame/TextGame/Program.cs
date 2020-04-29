@@ -2,45 +2,43 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Xml;
+using System.Timers;
 
 namespace TextGame
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main()
         {
-            Console.WriteLine("Press any key to start demo.");
-            Console.ReadKey();
-            DisplayModule(0);
-        }
-
-        static void Modules()
-        {
-            XmlTextReader reader = new XmlTextReader(@"C:\Users\Christian\source\repos\TextGame\TextGame\Dialogue.xml");
+            Move[] moveList = MoveList();
             
+            Monster bulbasaur = new Monster(1, "Bulbasaur", 5);
+            bulbasaur.Moves = new Move[] { moveList[0], moveList[2] };
+            Monster squirtle = new Monster(3, "Squirtle", 5);
+            squirtle.Moves = new Move[] { moveList[0], moveList[1] };
+
+            Player player = new Player("C-Vac", new Monster[] { bulbasaur , null, null,
+             null, null, null,});
+            Player rival = new Player("Angery Liberal", new Monster[] { squirtle , null, null,
+             null, null, null,});
+
+            Battle test = new Battle(player, rival);
+            test.Go();
+
         }
 
-        static int DisplayModule(int module)
+        public static Move[] MoveList()
         {
-            return 0;
-        }
-    }
+            Move Tackle = new Move("Tackle", 35, .95f, 35, true, false);
+            Move TailWhip = new Move("Tail Whip", 0, 1f, 30, false, true);
+            Move Growl = new Move("Growl", 0, 1f, 40, false, true);
+            
+            Move[] moveList = new Move[] { Tackle, TailWhip, Growl };
 
-    class Dialogue
-    {
-        public string Text { get; private set; }
-        public string[] Options { get; private set; }
-
-
-        public Dialogue()
-        {
-
+            return moveList;
         }
 
-        static int Input()
-        {
-            return 0;
-        }
     }
 }

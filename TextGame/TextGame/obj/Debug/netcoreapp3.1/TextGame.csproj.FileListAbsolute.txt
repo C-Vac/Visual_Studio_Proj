@@ -1,0 +1,13 @@
+C:\Users\Christian\source\repos\TextGame\TextGame\bin\Debug\netcoreapp3.1\TextGame.exe
+C:\Users\Christian\source\repos\TextGame\TextGame\bin\Debug\netcoreapp3.1\TextGame.deps.json
+C:\Users\Christian\source\repos\TextGame\TextGame\bin\Debug\netcoreapp3.1\TextGame.runtimeconfig.json
+C:\Users\Christian\source\repos\TextGame\TextGame\bin\Debug\netcoreapp3.1\TextGame.runtimeconfig.dev.json
+C:\Users\Christian\source\repos\TextGame\TextGame\bin\Debug\netcoreapp3.1\TextGame.dll
+C:\Users\Christian\source\repos\TextGame\TextGame\bin\Debug\netcoreapp3.1\TextGame.pdb
+C:\Users\Christian\source\repos\TextGame\TextGame\obj\Debug\netcoreapp3.1\TextGame.csprojAssemblyReference.cache
+C:\Users\Christian\source\repos\TextGame\TextGame\obj\Debug\netcoreapp3.1\TextGame.csproj.CoreCompileInputs.cache
+C:\Users\Christian\source\repos\TextGame\TextGame\obj\Debug\netcoreapp3.1\TextGame.AssemblyInfoInputs.cache
+C:\Users\Christian\source\repos\TextGame\TextGame\obj\Debug\netcoreapp3.1\TextGame.AssemblyInfo.cs
+C:\Users\Christian\source\repos\TextGame\TextGame\obj\Debug\netcoreapp3.1\TextGame.dll
+C:\Users\Christian\source\repos\TextGame\TextGame\obj\Debug\netcoreapp3.1\TextGame.pdb
+C:\Users\Christian\source\repos\TextGame\TextGame\obj\Debug\netcoreapp3.1\TextGame.genruntimeconfig.cache
