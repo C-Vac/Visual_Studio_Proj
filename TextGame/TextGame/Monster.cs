@@ -37,7 +37,7 @@ namespace TextGame
             }
             this.LV = lv;
 
-            if (Name != "MISSINGNO")
+            if (Name != "")
             {
                 this.BaseStats = GetBaseStats();
                 this.IV = IVBuilder();
@@ -48,7 +48,6 @@ namespace TextGame
                     Status = "OK";
                 }
             }
-
         }
 
         public int[] IVBuilder()
@@ -140,7 +139,7 @@ namespace TextGame
                 1 => "PLANTFROG`GRASS",
                 2 => "LIZARDFIRE`FIRE",
                 3 => "TURTLEGUY`WATER",
-                _ => "MISSINGNO`NORMAL",
+                _ => "`NORMAL",
             };
         }
         

@@ -235,7 +235,7 @@ namespace TextGame
                     output = String.Concat(output, "0");
                 }
 
-                if (Opponent.Name == "Wild ") { output = " "; }
+                if (Opponent.Name == "Wild ") { output = ""; }
             }
         }
 
@@ -588,7 +588,7 @@ namespace TextGame
             Console.Clear();
             foreach (Monster m in Player.Party)
             {
-                if (m.Nickname != "MISSINGNO")
+                if (m.Nickname != "")
                 {
                     Console.WriteLine("{0,-15}   :L{1}",
                         m.Nickname, m.LV);
